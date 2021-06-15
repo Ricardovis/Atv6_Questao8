@@ -1,0 +1,31 @@
+programa {
+	funcao inicio() {
+		/*Faça um programa que leia uma senha do usuário. Seu programa não deve aceitar
+        senhas iguais a:
+        • “12345”
+        • “admin”
+        • “senha”
+        • “xuxa”
+        Caso esse padrão seja informado, seu programa deve informar
+        uma mensagem de “senha insegura” e pedir outra senha
+        novamente.*/
+        
+        cadeia senha_escrita
+        
+        escreva("Escreva sua senha: ")
+        leia(senha_escrita)
+        limpa()
+        
+        enquanto(senha_escrita == "1234" ou senha_escrita == "admin" ou senha_escrita == "senha" ou senha_escrita == "xuxa"){
+            
+            escreva("Senha insegura \n")
+            escreva("Digite outra combinaçao: ")
+            leia(senha_escrita)
+            
+        }se(senha_escrita != "1234" e senha_escrita != "admin" e senha_escrita != "senha" e senha_escrita != "xuxa"){
+            
+            escreva("Senha salva!")
+        }
+       
+	}
+}
